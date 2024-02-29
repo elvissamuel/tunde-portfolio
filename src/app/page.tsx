@@ -370,19 +370,6 @@ export default async function Home() {
       <div className="my-40">
         <Photos />
       </div>
-      {/* <Container className="my-28">
-        <h2 className="my-2 text-4xl font-bold">Some of my recent projects</h2>
-        <p>
-          Empower Developers, IT Ops, and business teams to collaborate at high
-          velocity. Respond to changes and deliver great customer and employee
-          service experiences fast.
-        </p>
-        <div className="my-5 grid grid-cols-2 gap-4">
-          {[1, 2, 3, 4].map((item, index) => (
-            <ProjectComponent key={index} />
-          ))}
-        </div>
-      </Container> */}
       <Container className="my-28">
         <div className="flex flex-col gap-10 md:flex-row md:gap-4">
           <div className="pr-6 md:w-[60%]">
