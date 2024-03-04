@@ -64,12 +64,11 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 const art = [
   {
-    title:
-      'Who Owns the Product Roadmap? How to use Insight and Influence to Guide Product Direction',
-    slug: 'https://tundeadeniran.medium.com/who-owns-the-product-roadmap-how-to-use-insight-and-influence-to-guide-product-direction-534a6f52d35d',
+    title: 'The Future with Generative AI: Navigating the Uncharted Waters',
+    slug: 'https://tundeadeniran.medium.com/the-future-with-generative-ai-navigating-the-uncharted-waters-ea92f1f8c55b',
     description:
-      'In my early days as a Product Manager, I wondered why the experiences of my peers varied so much from one company to another. I’ve come to realise that different organizations operate with very different levels of flexibility and ownership around multiple aspects of a product manager’s traditional role. In this article, we’ll take a dive into the different scenarios product managers may find themselves',
-    date: '2023-03-25',
+      'In the rapidly evolving landscape of technology, artificial intelligence (AI) stands at the forefront, bringing us a future filled with lots of promise and uncertainty. As we delve into this brave new world, I find myself contemplating the profound impact AI will have across various sectors.',
+    date: '2024-03-04',
   },
   {
     title: 'Taking a 360 degree approach to roadmaps',
@@ -77,6 +76,14 @@ const art = [
     description:
       'A 360-degree approach with B2B roadmaps: Unleashing the power of customer feedback, internal stakeholder insights, and market trends — Product roadmapping is a crucial element of effective product',
     date: '2024-02-15',
+  },
+  {
+    title:
+      'Who Owns the Product Roadmap? How to use Insight and Influence to Guide Product Direction',
+    slug: 'https://tundeadeniran.medium.com/who-owns-the-product-roadmap-how-to-use-insight-and-influence-to-guide-product-direction-534a6f52d35d',
+    description:
+      'In my early days as a Product Manager, I wondered why the experiences of my peers varied so much from one company to another. I’ve come to realise that different organizations operate with very different levels of flexibility and ownership around multiple aspects of a product manager’s traditional role. In this article, we’ll take a dive into the different scenarios product managers may find themselves',
+    date: '2023-03-25',
   },
   {
     title:
