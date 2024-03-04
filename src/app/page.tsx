@@ -355,6 +355,26 @@ export default async function Home() {
             {art.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
+            <a
+              className="flex items-center gap-2 text-teal-500"
+              href="/articles"
+            >
+              <p className="text-base font-medium ">View all articles</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <EmailJS />
