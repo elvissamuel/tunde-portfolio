@@ -47,11 +47,11 @@ const EmailJS = (props: Props) => {
     setLoading(true)
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_SERVICE_ID ?? '',
-        process.env.NEXT_PUBLIC_TEMPLATE_ID ?? '',
+        "service_3s44ptq",
+        "template_5hz8z9n",
         formValues,
         {
-          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY ?? '',
+          publicKey: "V-TIu3xXj3gCnONXe",
         },
       )
       .then(
