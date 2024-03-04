@@ -2,15 +2,16 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import image1 from '@/images/photos/tunde-speak2.jpg'
+import image2 from '@/images/photos/tunde-speak3.jpg'
+import image3 from '@/images/photos/tunde-speak1.jpg'
+import image4 from '@/images/photos/tunde-speak4.jpg'
+import image5 from '@/images/photos/tunde-speak5.jpg'
+import image6 from '@/images/photos/tunde-speak6.jpg'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import { LinkedInIcon, XIcon } from '@/components/SocialIcons'
+import profilePhoto from '@/images/photos/tunde.jpg'
 
 function SocialLink({
   className,
@@ -49,18 +50,17 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'About',
-  description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+  description: 'I’m Tunde Adeniran.',
 }
 
 export default function About() {
   return (
-    <Container className="mt-16 sm:mt-32">
+    <Container className=" mt-16 w-full sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
-              src={portraitImage}
+              src={profilePhoto}
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
@@ -68,36 +68,49 @@ export default function About() {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            I&apos;m Tunde Adeniran, a product executive based in London,
+            dedicated to using technology to shape the future.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              My passion for computing dates back to my earliest memories. At
+              the age of 8, after my dad introduced me to his new work laptop at
+              the time (a Compaq LTE 5000 series), I quickly mastered typing on
+              it and wrote my first program.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              During my childhood, my fascination with computers was rivalled
+              only by my love for books. At 10 years old, I had read the
+              Encyclopædia Britannica learning about topics ranging from
+              planetary rocks to black holes, and animal life.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              Over the years, I grew up wanting to be a scientist, and then a
+              neurosurgeon (inspired by Dr. Ben Carson whom I admired very much
+              as a child), then a pilot (later abandoned due to my fear of
+              heights).
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              I completed an undergraduate degree in Computer Science during
+              which I wanted to become a programmer or a network engineer (wrote
+              the Cisco CCNA exam in my late teens). I soon after went into
+              entrepreneurship founding Tuwonk Ltd, a logistics business I ran
+              for a couple of years back in Nigeria. Following a series of
+              economic shocks and my inexperience in the logistics industry, I
+              exited the business and set out on a new path in the software
+              industry a domain I was a lot more familiar with.
+            </p>
+            <p>
+              I&apos;ve spent the last 13 years driving product innovation and
+              building software for different technology businesses ranging from
+              start-ups to established firms.
+            </p>
+            <p>
+              Today, as the co-founder of Lerno, I&apos;m focused on using
+              technology to reinvent the world of the art of selling. Our goal
+              is to empower the next generation of sellers with the right tools
+              they need to build connections with customers like never before.
             </p>
           </div>
         </div>
@@ -106,13 +119,11 @@ export default function About() {
             <SocialLink href="#" icon={XIcon}>
               Follow on X
             </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-              Follow on GitHub
-            </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/tundeadeniran"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
@@ -120,9 +131,63 @@ export default function About() {
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              adeniran.tunde@gmail.com
             </SocialLink>
           </ul>
+        </div>
+      </div>
+
+      <div className="my-28">
+        <p className="text-3xl font-bold">Something About Public Speaking</p>
+        <p className="my-2 text-zinc-600 dark:text-zinc-400">
+          I&apos;ve spent the last 13 years driving product innovation and
+          building software for different technology businesses ranging from
+          start-ups to established firms.
+        </p>
+
+        <div className="my-6 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+          <div className="h-56 rounded-lg shadow-md md:col-span-2">
+            <Image
+              className="h-full w-full rounded-lg object-cover shadow-md"
+              src={image3}
+              alt="img1"
+            />
+          </div>
+          <div className="h-56 rounded-lg shadow-md">
+            <Image
+              className="h-full w-full rounded-lg object-cover"
+              src={image5}
+              alt="img1"
+            />
+          </div>
+          <div className="h-56 rounded-lg shadow-md">
+            <Image
+              className="h-full w-full rounded-lg object-cover"
+              src={image1}
+              alt="img1"
+            />
+          </div>
+          <div className="h-56 rounded-lg shadow-md">
+            <Image
+              className="h-full w-full rounded-lg object-cover"
+              src={image4}
+              alt="img1"
+            />
+          </div>
+          <div className="h-56 rounded-lg shadow-md md:col-span-2">
+            <Image
+              className="h-full w-full rounded-lg object-cover"
+              src={image2}
+              alt="img1"
+            />
+          </div>
+          <div className="h-56 rounded-lg shadow-md">
+            <Image
+              className="h-full w-full rounded-lg object-cover"
+              src={image6}
+              alt="img1"
+            />
+          </div>
         </div>
       </div>
     </Container>
